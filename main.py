@@ -83,7 +83,7 @@ def move_image_datetime(filepath, root_dest):
                 while os.path.exists(duplicate_image):
                     duplicate_image = whatsapp_folder + os.sep + filename[1] + "(" + str(count) + ")" + extension
                     count += 1
-                # when condition for loop is FALSE - meaning that file does not exists - it moves the image renamed to new destination
+                # when condition for loop is FALSE - meaning that file does not exist - it moves the image renamed to new destination
                 os.rename(filepath, duplicate_image)
                 text_duplicate = filepath + " is likely a duplicate image and it was renamed and moved to " + duplicate_image
                 save_code(text_duplicate)
